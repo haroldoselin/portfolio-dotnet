@@ -1,7 +1,0 @@
-// Validating benchmarks:
-// Benchmark TransactionParserBenchmark.StringParsing: DefaultJob
-//    * Benchmarked method `StringParsing` is static. Benchmarks MUST be instance methods, static methods are not supported.
-
-// Benchmark TransactionParserBenchmark.SpanParsing: DefaultJob
-//    * Benchmarked method `SpanParsing` is static. Benchmarks MUST be instance methods, static methods are not supported.
-

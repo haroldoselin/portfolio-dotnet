@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CSharp14.Showcase\CSharp14.Showcase.csproj" />
+    <ProjectReference Include="../../src/CSharp14.Showcase/CSharp14.Showcase.csproj" />
   </ItemGroup>
 
 </Project>

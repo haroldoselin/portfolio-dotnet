@@ -1,5 +1,9 @@
 <Solution>
-  <Project Path="CSharp14.Showcase.Benchmarks/CSharp14.Showcase.Benchmarks.csproj" />
-  <Project Path="CSharp14.Showcase.Tests/CSharp14.Showcase.Tests.csproj" />
-  <Project Path="CSharp14.Showcase/CSharp14.Showcase.csproj" />
+  <Folder Name="/src/">
+    <Project Path="src/CSharp14.Showcase.Benchmarks/CSharp14.Showcase.Benchmarks.csproj" />
+    <Project Path="src/CSharp14.Showcase/CSharp14.Showcase.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/CSharp14.Showcase.Tests/CSharp14.Showcase.Tests.csproj" />
+  </Folder>
 </Solution>
