@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="CSharp14.Showcase.Benchmarks/CSharp14.Showcase.Benchmarks.csproj" />
+  <Project Path="CSharp14.Showcase.Tests/CSharp14.Showcase.Tests.csproj" />
+  <Project Path="CSharp14.Showcase/CSharp14.Showcase.csproj" />
+</Solution>
