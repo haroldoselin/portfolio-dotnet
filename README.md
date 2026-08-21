@@ -62,6 +62,13 @@ Como usar (rápido):
 - Run: dotnet run (na pasta do projeto desejado)
 - Tests: dotnet test (se houver projetos de teste)
 
+### Collections
+
+- Subpasta: `01-dotnet-fundamentals/collections`
+- Objetivo: demonstrar a escolha e o uso de coleções no C# 14/.NET 10 em um catálogo de produtos, com foco em acesso eficiente, imutabilidade, validação e redução de alocações.
+- Conteúdo demonstrado: `Dictionary`, `List`, arrays, LINQ, `ImmutableArray`, `ArrayPool`, snapshots, testes unitários e benchmark de busca indexada versus busca sequencial.
+- Como usar: consulte o [README de Collections](01-dotnet-fundamentals/collections/README.md).
+
 Portfolio .NET 10 (visão geral)
 
 - Subpasta: /dotnet-10.
