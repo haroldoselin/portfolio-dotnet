@@ -55,3 +55,9 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+/.vs
+/01-dotnet-fundamentals/csharp-14/.vs
+/01-dotnet-fundamentals/.vs
+/01-dotnet-fundamentals/dotnet-10/.vs/DotNet10.Showcase.slnx
+/01-dotnet-fundamentals/dotnet-10/.vs/ProjectEvaluation
+/01-dotnet-fundamentals/dotnet-10/.vs/DotNet10.Showcase/CopilotIndices/18.9.1311.36310

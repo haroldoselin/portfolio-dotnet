@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/DotNet10.Showcase.Benchmarks/DotNet10.Showcase.Benchmarks.csproj" />
+    <Project Path="src/DotNet10.Showcase/DotNet10.Showcase.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/DotNet10.Showcase.Tests/DotNet10.Showcase.Tests.csproj" />
+  </Folder>
+</Solution>
