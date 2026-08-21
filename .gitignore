@@ -57,3 +57,4 @@ TestResult.xml
 nunit-*.xml
 /.vs
 /01-dotnet-fundamentals/csharp-14/.vs
+/01-dotnet-fundamentals/.vs
