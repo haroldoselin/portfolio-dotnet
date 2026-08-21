@@ -16,13 +16,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\src\DotNet10.Showcase\DotNet10.Showcase.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Using Include="Xunit" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Donain\" />
-    <Folder Include="Application\" />
-    <Folder Include="Diagnostics\" />
   </ItemGroup>
 
 </Project>
