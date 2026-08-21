@@ -1,33 +1,36 @@
-# Memory Performance — C# / .NET Fundamentals
+﻿# Memory Performance — C# / .NET Fundamentals
 
 Subpasta: `01-dotnet-fundamentals/memory-performance`
 
-Objetivo: demonstrar técnicas de performance e gerenciamento de memória em C# 14/.NET 10, sempre relacionando otimizações a medições e ao custo de manutenção.
+Objetivo: demonstrar técnicas de performance e gerenciamento de memória em C# 14/.NET 10 por meio de métricas de texto e processamento de buffers, sempre relacionando otimizações a medições e ao custo de manutenção.
 
 Conteúdo demonstrado (resumo):
 
-- Alocações no heap e impacto da coleta de lixo.
-- `Span<T>`, `ReadOnlySpan<T>`, `Memory<T>` e `ReadOnlyMemory<T>`.
-- `ArrayPool<T>` para buffers temporários.
-- Evitar cópias e alocações desnecessárias.
-- Comparação entre APIs orientadas a abstração e caminhos otimizados.
-- BenchmarkDotNet e `MemoryDiagnoser`.
-- Análise de throughput, latência e memória alocada.
+- Comparação entre `string.Split` e `ReadOnlySpan<char>` para contagem de palavras.
+- `ReadOnlyMemory<byte>` em uma API assíncrona de processamento.
+- `ArrayPool<byte>` para reutilização de buffers temporários.
+- Devolução segura de buffers com `finally` e limpeza do conteúdo alugado.
+- Redução de cópias e alocações desnecessárias em caminhos quentes.
+- BenchmarkDotNet com `MemoryDiagnoser` para medir memória alocada.
+- Testes unitários para validar equivalência funcional e cancelamento.
 
 ## Estrutura
 
-- A implementação do exemplo deve ficar em `src/MemoryPerformance.Showcase`.
-- Os benchmarks devem ficar em `src/MemoryPerformance.Showcase.Benchmarks`.
-- Os testes devem ficar em `tests/MemoryPerformance.Showcase.Tests`.
+- `src/MemoryPerformance.Showcase`: aplicação console e APIs de performance.
+- `src/MemoryPerformance.Showcase.Benchmarks`: benchmarks de texto.
+- `tests/MemoryPerformance.Showcase.Tests`: testes automatizados com xUnit.
 
 ## Como usar
 
 ```powershell
-dotnet build
-dotnet test
-dotnet run -c Release
+dotnet build MemoryPerformance.Showcase.slnx
+dotnet run --project src/MemoryPerformance.Showcase
+dotnet test MemoryPerformance.Showcase.slnx
+dotnet run --project src/MemoryPerformance.Showcase.Benchmarks -c Release
 ```
 
 ## Decisões de engenharia
 
-O projeto prioriza otimização orientada por evidência. APIs de baixo nível são isoladas, documentadas por testes e comparadas com uma implementação legível para evitar complexidade sem ganho mensurável.
+O projeto mantém uma implementação baseline legível para comparação com o caminho baseado em `Span`. A otimização é isolada e validada por testes, enquanto o `MemoryDiagnoser` fornece evidência sobre alocações e tempo antes de qualquer decisão de adoção.
+
+`ArrayPool` é usado apenas durante o processamento temporário e o buffer é devolvido em `finally`, inclusive em caso de falha. Em produção, o tamanho, a limpeza e o ciclo de vida do buffer devem ser avaliados conforme sensibilidade dos dados e perfil de carga.
