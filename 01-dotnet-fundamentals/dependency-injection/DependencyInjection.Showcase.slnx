@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+	<Project Path="src/DependencyInjection.Showcase.Benchmarks/DependencyInjection.Showcase.Benchmarks.csproj" />
+	<Project Path="src/DependencyInjection.Showcase/DependencyInjection.Showcase.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+	<Project Path="tests/DependencyInjection.Showcase.Tests/DependencyInjection.Showcase.Tests.csproj" />
+  </Folder>
+</Solution>
