@@ -4,7 +4,8 @@ using System.Text;
 
 namespace DotNet10.Showcase.Domain.Events
 {
-    internal class OrderCreatedDomainEvent
-    {
-    }
+    public sealed record OrderCreatedDomainEvent(
+        OrderId OrderId,
+        string CustomerId,
+        DateTimeOffset OccurredAt);
 }
