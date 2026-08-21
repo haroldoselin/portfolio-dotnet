@@ -41,61 +41,18 @@ Cloud
 
 01 - C# / .NET Fundamentals
 
-- Subpasta: /csharp-14
-- Objetivo: consolidar os fundamentos da linguagem C# 14 e do runtime .NET 10, com exemplos práticos e exercícios que demonstram padrões, boas práticas e recursos de linguagem.
+- [csharp-14](01-dotnet-fundamentals/csharp-14) — linguagem C# 14, domínio, parsing, `Span` e testes.
+- [collections](01-dotnet-fundamentals/collections) — coleções, imutabilidade, índices, pooling e benchmarks.
+- [async-await](01-dotnet-fundamentals/async-await) — programação assíncrona, cancelamento e composição de tarefas.
+- [dependency-injection](01-dotnet-fundamentals/dependency-injection) — composição de serviços, abstrações e lifetimes.
+- [memory-performance](01-dotnet-fundamentals/memory-performance) — memória, alocações, `Span`, `Memory` e medições.
+- [dotnet-10](01-dotnet-fundamentals/dotnet-10) — hosting, configuração, worker, domínio, diagnóstico e testes.
 
-Conteúdo demonstrado (resumo):
-- Estrutura de um projeto .NET (csproj, pastas, convenções) e uso de top-level statements.
-- Sintaxe e recursos do C# 14: records, pattern matching, switch expressions e aprimoramentos de linguagem.
-- Tipos e segurança de null: referenciais anuláveis (nullable reference types) e proteção contra NREs.
-- Programação assíncrona: async/await, Task, e padrões de I/O assíncrono.
-- Delegates, eventos, expressões lambda, métodos locais e closures.
-- Generics, coleções imutáveis/imutabilidade e uso de LINQ para consultas e transformações.
-- Manipulação de exceções, logging e princípios de design para tratamento de erros.
-- Noções de desempenho: Span<T>, Memory<T>, alocação e práticas para reduzir GC pressure.
-- Testes básicos: estrutura de testes unitários e como executar testes (dotnet test) quando presentes.
-- Exemplos práticos: utilitários, pequenos CLI, algoritmos e modelos de domínio simples para ilustrar conceitos.
+Documentação dos projetos: cada subpasta segue o padrão definido em [README-TEMPLATE.md](docs/README-TEMPLATE.md), com objetivo, conteúdo demonstrado, estrutura, comandos de uso e decisões de engenharia.
 
-Como usar (rápido):
-- Abra a pasta: /csharp-14
-- Build: dotnet build
-- Run: dotnet run (na pasta do projeto desejado)
-- Tests: dotnet test (se houver projetos de teste)
+## Portfolio .NET 10 (visão geral)
 
-### Collections
-
-- Subpasta: `01-dotnet-fundamentals/collections`
-- Objetivo: demonstrar a escolha e o uso de coleções no C# 14/.NET 10 em um catálogo de produtos, com foco em acesso eficiente, imutabilidade, validação e redução de alocações.
-- Conteúdo demonstrado: `Dictionary`, `List`, arrays, LINQ, `ImmutableArray`, `ArrayPool`, snapshots, testes unitários e benchmark de busca indexada versus busca sequencial.
-- Como usar: consulte o [README de Collections](01-dotnet-fundamentals/collections/README.md).
-
-Portfolio .NET 10 (visão geral)
-
-- Subpasta: /dotnet-10.
-- Objetivo: demonstrar capacidade prática com o ecossistema .NET 10 — construção de APIs, acesso a dados, mensageria, contêineres, deploy em cloud, observabilidade e automação de CI/CD.
-
-Conteúdo demonstrado (resumo):
-- Plataforma e tooling: .NET 10 SDK, dotnet CLI, integração com Visual Studio 2022/2026, e arquivos de solução (.sln) e projetos (.csproj).
-- Web e APIs: ASP.NET Core minimal APIs e controllers, middleware, autenticação/autorização básica e boas práticas para rotas e versionamento.
-- Data access: Entity Framework Core (migrations, DbContext, patterns), Dapper para queries performáticas e estratégias de mapeamento.
-- Bancos e cache: SQL Server para persistência relacional e Redis para cache/distribuição de sessão.
-- Mensageria: RabbitMQ para integração assíncrona e padrões de pub/sub e filas.
-- Contêinerização e infra: Dockerfiles, docker-compose para orquestração local e orientações para criação de imagens leves.
-- Cloud e CI/CD: exemplos de deploy para Azure (App Service / Container Registry) e pipelines de automação via GitHub Actions.
-- Observabilidade: OpenTelemetry para traces e métricas, integração com logs estruturados e exportadores.
-- Segurança: princípios de segurança em APIs, proteção de segredos, e práticas de hardening básicas.
-- Arquitetura: demonstração de Clean Architecture, DDDLight, CQRS e Vertical Slice em pequenos projetos referenciais.
-- Testes e qualidade: unidades, testes de integração quando aplicáveis, e configuração básica para execução de testes automatizados.
-- Performance: exemplos de benchmarking, uso de Span/Memory, pool de arrays e práticas para minimizar alocações desnecessárias.
-
-Como usar (rápido, visão do portfólio):
-- Abra a solução principal ou a pasta do exemplo desejado na raiz do repositório
-- Build: dotnet build (ou usar Build no Visual Studio)
-- Run: dotnet run (ou executar via Visual Studio / Docker conforme o projeto)
-- Docker: docker-compose up --build (quando aplicável)
-- Tests: dotnet test (na solução ou em projetos de teste específicos)
-- CI: ver arquivo .github/workflows para pipelines de integração e deploy
-
+01-  Dotnet Fundamentals
 02 - ASP.NET Core
 03 - Data Access
 04 - Architecture
