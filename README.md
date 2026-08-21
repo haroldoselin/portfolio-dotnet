@@ -52,7 +52,7 @@ Documentação dos projetos: cada subpasta segue o padrão definido em [README-T
 
 ## Portfolio .NET 10 (visão geral)
 
-01-  Dotnet Fundamentals
+01 - Dotnet Fundamentals
 02 - ASP.NET Core
 03 - Data Access
 04 - Architecture
