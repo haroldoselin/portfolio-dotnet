@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using DotNet10.Showcase.Domain.ValueObjects;
 
 namespace DotNet10.Showcase.Domain.Events
 {

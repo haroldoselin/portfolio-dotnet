@@ -19,4 +19,10 @@
     <Using Include="Xunit" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Donain\" />
+    <Folder Include="Application\" />
+    <Folder Include="Diagnostics\" />
+  </ItemGroup>
+
 </Project>

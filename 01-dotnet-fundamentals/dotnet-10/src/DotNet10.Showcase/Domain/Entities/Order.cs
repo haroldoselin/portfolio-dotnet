@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using DotNet10.Showcase.Domain.Enuns;
+using DotNet10.Showcase.Domain.Events;
+using DotNet10.Showcase.Domain.Exceptions;
 using DotNet10.Showcase.Domain.ValueObjects;
 
 namespace DotNet10.Showcase.Domain.Entities
