@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+	<Project Path="src/AsyncAwait.Showcase.Benchmarks/AsyncAwait.Showcase.Benchmarks.csproj" />
+	<Project Path="src/AsyncAwait.Showcase/AsyncAwait.Showcase.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+	<Project Path="tests/AsyncAwait.Showcase.Tests/AsyncAwait.Showcase.Tests.csproj" />
+  </Folder>
+</Solution>
