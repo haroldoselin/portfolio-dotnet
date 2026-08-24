@@ -3,7 +3,7 @@ using MinimalApi.ShowCase.Domain.Entities;
 using MinimalApi.ShowCase.Infrastructure.Persistence;
 using Xunit;
 
-namespace MinimalApi.ShowCase.Tests;
+namespace MinimalApi.ShowCase.Tests.Application;
 
 public sealed class ProdutoTests
 {

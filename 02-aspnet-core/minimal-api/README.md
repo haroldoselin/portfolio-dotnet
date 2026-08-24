@@ -20,3 +20,4 @@ dotnet test MinimalApi.sln
 ```
 
 O Swagger abre na raiz `/`. Os endpoints são `GET /api/v1/produtos/` e `POST /api/v1/produtos/`.
+

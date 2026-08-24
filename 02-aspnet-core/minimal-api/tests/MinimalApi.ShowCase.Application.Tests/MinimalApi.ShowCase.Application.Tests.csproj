@@ -13,10 +13,5 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="../../src/MinimalApi.ShowCase.Application/MinimalApi.ShowCase.Application.csproj" />
-    <ProjectReference Include="../../src/MinimalApi.ShowCase.Domain/MinimalApi.ShowCase.Domain.csproj" />
-    <ProjectReference Include="../../src/MinimalApi.ShowCase.Infrastructure/MinimalApi.ShowCase.Infrastructure.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Api\" />
   </ItemGroup>
 </Project>
