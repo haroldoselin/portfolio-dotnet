@@ -50,6 +50,10 @@ Cloud
 
 Documentação dos projetos: cada subpasta segue o padrão definido em [README-TEMPLATE.md](docs/README-TEMPLATE.md), com objetivo, conteúdo demonstrado, estrutura, comandos de uso e decisões de engenharia.
 
+02 - ASP.NET Core
+
+- [ASP.NET Core](02-aspnet-core) — autenticação, autorização, middleware, Minimal APIs, MVC, OpenAPI e Web API REST.
+
 ## Portfolio .NET 10 (visão geral)
 
 01 - Dotnet Fundamentals
